@@ -1,5 +1,5 @@
 Summary:	ZLIB compression and decompression for TCL
-Name:		tcl-ztcl
+Name:		tcl-z
 Version:	1.0
 Release:	0.1
 License:	distributable
