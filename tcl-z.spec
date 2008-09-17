@@ -6,7 +6,7 @@ License:	distributable
 Group:		Development/Languages/Tcl
 Source0:	http://sgolovan.nes.ru/jabber/ztcl/ztcl/ztcl_%{version}b4_src.tar.gz
 # Source0-md5:	32c2ae026ca12a370b56f7f1155ae90c
-BuildRequires:	tcl-devel >= 8.4.3
+BuildRequires:	tcl-devel >= 8.5.0
 BuildRequires:	tcl-more-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,6 +31,7 @@ Pliki nagłówkowe i dokumetacja do tcl-z.
 %setup -q -n ztcl_%{version}b4
 
 sed -i -e 's#/home/devel/src/C/tcl/ztcl/main--1.0/##g' Makefile*
+sed -i -e 's#tclstub8.4#tclstub8.5#g' configure*
 
 %build
 %configure \
